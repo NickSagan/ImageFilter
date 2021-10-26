@@ -31,6 +31,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var selectedImage: UIImage?
     
+    // Check documentation: https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
+    
     @IBAction func filterButtonPressed(_ sender: UIButton) {
         if let image = selectedImage {
             let filter = CIFilter(name: "CISepiaTone")
